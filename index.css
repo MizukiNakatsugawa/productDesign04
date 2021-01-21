@@ -14,7 +14,6 @@
     width: 25%;
     height: 100%;
     background-color: #55d8ff;
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
     border: none;
@@ -25,11 +24,33 @@
     line-height: 300px;
 }
 
+.button--container .btn.pokey {
+    background-image: url(./TemplateData/pokey_img.png);
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode:lighten;
+    background-size: cover;
+}
+
+.button--container .btn.chocopie {
+    background-image: url(./TemplateData/chocopie_img.jpg);
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode:lighten;
+    background-size: cover;
+}
+
+.button--container .btn.alfort {
+    background-image: url(./TemplateData/alfort_img.png);
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode:lighten;
+    background-size: cover;
+}
+
 /* .btn:active {
     transform: translateY(4px);
     border-bottom: 1px solid #0090bb;
 } */
 
 .button--container .btn:hover {
-    background-color: #a3eaff;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
 }
