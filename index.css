@@ -5,26 +5,31 @@
 }
 
 .button--container {
-    display: inline-flexbox;
-    margin: 50px auto;
+    display: flex;
     text-align: center;
+    height: 300px;
 }
 
 .button--container .btn {
-    width: 200px;
-    height: 50px;
+    width: 25%;
+    height: 100%;
     background-color: #55d8ff;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     border: none;
-    border-radius: 5px;
-    border-bottom: 5px solid #0090bb;
+    /* border-radius: 5px; */
+    /* border-bottom: 5px solid #0090bb; */
     cursor: pointer;
     outline: none;
+    line-height: 300px;
 }
 
-.btn:active {
+/* .btn:active {
     transform: translateY(4px);
     border-bottom: 1px solid #0090bb;
+} */
+
+.button--container .btn:hover {
+    background-color: #a3eaff;
 }
