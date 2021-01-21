@@ -1,8 +1,16 @@
-.webgl-content {
-    border: red solid 1px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.btn {
+.button--container {
+    display: inline-flexbox;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.button--container .btn {
     width: 200px;
     height: 50px;
     background-color: #55d8ff;
