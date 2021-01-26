@@ -127,6 +127,26 @@ body {
   background-image: url(./TemplateData/alfort_img.png);
 }
 
+.sidebar .button--container .menu--button.almondchoco {
+    background-image: url(./TemplateData/almondchoco_img.jpg);
+}
+
+.sidebar .button--container .menu--button.blackthunder {
+    background-image: url(./TemplateData/blackthunder_img.jpg);
+}
+
+.sidebar .button--container .menu--button.koeda {
+    background-image: url(./TemplateData/koeda_img.jpg);
+}
+
+.sidebar .button--container .menu--button.pienomi {
+    background-image: url(./TemplateData/pienomi_img.jpg);
+}
+
+.sidebar .button--container .menu--button.takenokonosato {
+    background-image: url(./TemplateData/takenokonosato_img.jpg);
+}
+
 #checkbox {
   display: none;
 }
