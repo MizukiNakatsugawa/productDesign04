@@ -162,12 +162,16 @@ body {
   display: none;
 }
 
+.howtouse .howtomouse--container {
+    text-align: center;
+}
+
 .howtouse .howtomouse--container .title {
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  text-align: left;
   color: #fff;
   font-size: 20px;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .howtouse .howtomouse--container .mouse--container {
@@ -193,6 +197,11 @@ body {
 .howtouse .howtomouse--container .mouse--container .img--wrap img {
   height: 70px;
   margin: 0 auto;
+}
+
+.howtouse .howtomouse--container .mouse--container .img--wrap .scroll {
+    height: 60px;
+    margin: 0 auto;
 }
 
 .howtouse .howtomouse--container .mouse--container .img--wrap p {
