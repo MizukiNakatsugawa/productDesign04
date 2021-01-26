@@ -81,10 +81,15 @@ body {
 
 .sidebar .menu--header .menu-title,
 .howtouse .howtouse--header .howtouse-title {
-  font-size: 22px;
-  color: #fff;
+  /* font-size: 22px; */
+  /* color: #fff; */
   flex-basis: 100%;
   text-align: center;
+}
+
+.sidebar .menu--header .menu-title img,
+.howtouse .howtouse--header .howtouse-title img {
+    height: 30px;
 }
 
 .sidebar .menu--header .fa-times,
