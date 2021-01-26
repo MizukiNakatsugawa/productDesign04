@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/457c6508d0.js" crossorigin="anonymous"></script>
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
@@ -14,15 +15,79 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 100%; height: 600px"></div>
+
+    <div class="head">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">
+        <i class="fas fa-bars menu--icon" id="btn"></i>
+      </label>
+
+      <div class="title--text">
+        チョコレート菓子の食べ方のクセ
+      </div>
+
+      <i id="infotmationBtn" class="far fa-question-circle"></i>
+      
     </div>
 
-    <div class="button--container">
-      <div id="pokey" class="btn pokey">グリコ　ポッキー</div>
-      <div id="chocopai" class="btn chocopie">ロッテ　チョコパイ</div>
-      <div class="btn alfort">ブルボン　アルフォート</div>
-      <div class="btn">Coming Soon</div>
+    <div class="sidebar" id="sidebar">
+      <div class="menu--header">
+        <div class="menu-title">お菓子リスト</div>
+        <!-- <i class="fas fa-times" id="cancel"></i> -->
+        <i class="close right" id="cancel"></i>
+      </div>
+      
+      <ul class="button--container">
+        <li id="pokey" class="menu--button pokey"></li>
+        <li id="chocopai" class="menu--button chocopie"></li>
+        <li id="alfort" class="menu--button alfort"></li>
+        <li class="menu--button"></li>
+        <li class="menu--button"></li>
+        <li class="menu--button"></li>
+        <li class="menu--button"></li>
+        <li class="menu--button"></li>
+      </ul>
+    </div>
+
+    <div class="howtouse" id="howtouse">
+      <div class="howtouse--header">
+        <!-- <i class="fas fa-times" id="howtouseCancel"></i> -->
+        <i class="close left" id="howtouseCancel"></i>
+        <div class="howtouse-title">使い方</div>
+      </div>
+      <div class="howtomouse--container">
+        <div class="title">操作方法</div>
+        <div class="mouse--container">
+          <div class="img--wrap">
+            <img src="./TemplateData/mouseIcon/leftClick.png">
+            <p>左クリック</p>
+          </div>
+          <p>上下左右に移動</p>
+        </div>
+
+        <div class="mouse--container">
+          <div class="img--wrap">
+            <img src="./TemplateData/mouseIcon/rightClick.png">
+            <p>右クリック</p>
+          </div>
+          <p>視点切り替え</p>
+        </div>
+
+        <div class="mouse--container">
+          <div class="img--wrap">
+            <img src="./TemplateData/mouseIcon/scroll.png">
+            <p>スクロール</p>
+          </div>
+          <p>ズームイン／ズームアウト</p>
+        </div>
+      </div>
+      <div class="explain--container">
+        <p>左上のメニューからお菓子を選択すると私の食べ方のクセを見ることができます</p>
+      </div>
+    </div>
+
+    <div class="webgl-content">
+      <div id="unityContainer" class="unityContainer"></div>
     </div>
 
     

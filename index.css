@@ -1,56 +1,208 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.button--container {
-    display: flex;
-    text-align: center;
-    height: 300px;
+body {
+  height: 100%;
+  background-color: #000;
 }
 
-.button--container .btn {
-    width: 25%;
-    height: 100%;
-    background-color: #55d8ff;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    /* border-radius: 5px; */
-    /* border-bottom: 5px solid #0090bb; */
-    cursor: pointer;
-    outline: none;
-    line-height: 300px;
+.head {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background-color: #eacea9;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  padding: 0px 50px;
 }
 
-.button--container .btn.pokey {
-    background-image: url(./TemplateData/pokey_img.png);
-    background-color: rgba(255, 255, 255, 0.1);
-    background-blend-mode:lighten;
-    background-size: cover;
+.head .menu--icon {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e06d37;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.button--container .btn.chocopie {
-    background-image: url(./TemplateData/chocopie_img.jpg);
-    background-color: rgba(255, 255, 255, 0.1);
-    background-blend-mode:lighten;
-    background-size: cover;
+.head .title--text {
+  font-size: 20px;
+  color: #e06d37;
+  font-weight: 600;
 }
 
-.button--container .btn.alfort {
-    background-image: url(./TemplateData/alfort_img.png);
-    background-color: rgba(255, 255, 255, 0.1);
-    background-blend-mode:lighten;
-    background-size: cover;
+.head .fa-question-circle {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e06d37;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-/* .btn:active {
-    transform: translateY(4px);
-    border-bottom: 1px solid #0090bb;
-} */
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 500px;
+  height: 100%;
+  background-color: #ebb16bc0;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
 
-.button--container .btn:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode:lighten;
+.howtouse {
+  position: fixed;
+  right: 0px;
+  width: 500px;
+  height: 100%;
+  background-color: #ebb16bc0;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.sidebar .menu--header,
+.howtouse .howtouse--header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #e06d37;
+}
+
+.sidebar .menu--header .menu-title,
+.howtouse .howtouse--header .howtouse-title {
+  font-size: 22px;
+  color: #fff;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.sidebar .menu--header .fa-times,
+.howtouse .howtouse--header .fa-times {
+  color: #fff;
+  font-size: 40px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.sidebar .button--container {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(4, 170px);
+  grid-template-columns: 50% 50%;
+}
+
+.sidebar .button--container .menu--button {
+  margin: 5px;
+  border: solid 0.5px #fff;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* background-blend-mode:lighten; */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: margin 0.3s ease;
+}
+
+.sidebar .button--container .menu--button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  margin: 0;
+}
+
+.sidebar .button--container .menu--button.pokey {
+  background-image: url(./TemplateData/pokey_img.png);
+}
+
+.sidebar .button--container .menu--button.chocopie {
+  background-image: url(./TemplateData/chocopie_img.jpg);
+}
+
+.sidebar .button--container .menu--button.alfort {
+  background-image: url(./TemplateData/alfort_img.png);
+}
+
+#checkbox {
+  display: none;
+}
+
+.howtouse .howtomouse--container .title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.howtouse .howtomouse--container .mouse--container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.howtouse .howtomouse--container .mouse--container p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.howtouse .howtomouse--container .mouse--container .img--wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  flex-basis: 35%;
+}
+
+.howtouse .howtomouse--container .mouse--container .img--wrap img {
+  height: 70px;
+  margin: 0 auto;
+}
+
+.howtouse .howtomouse--container .mouse--container .img--wrap p {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.howtouse .explain--container {
+  margin: 20px 30px;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  /* right: 32px; */
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  /* opacity: 0.3; */
+  cursor: pointer;
+}
+.close.right {
+    right: 32px;
+}
+.close.left {
+    left: 32px;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
