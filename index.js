@@ -8,10 +8,13 @@ let koedaBtn = document.getElementById("koeda");
 let pienomiBtn = document.getElementById("pienomi");
 let takenokoBtn = document.getElementById("takenokonosato");
 
+let pokeyRadio = document.getElementById("pokeyRadio");
+
 let checkbox = document.getElementById("checkbox");
 let cancelBtn = document.getElementById("cancel");
 let infoBtn = document.getElementById("infotmationBtn");
 let howtouseCancelBtn = document.getElementById("howtouseCancel");
+
 
 
 pokeyBtn.addEventListener("click", () => {
